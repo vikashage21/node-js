@@ -1,0 +1,14 @@
+{
+  "name": "airpollutationapp",
+  "version": "1.0.0",
+  "description": "this is an appliction for find informantion about air quality index",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}
