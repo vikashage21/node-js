@@ -100,3 +100,57 @@ text-align: center;
 a{
     text-decoration: none;
 }
+
+@media screen and (max-width: 966px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .formContainer,
+    .info {
+        min-width: 100%;
+        border-radius: 0;
+    }
+}
+
+/* write a code for responsive design */
+
+/* Media Query for screens with a max-width of 563px */
+@media screen and (max-width: 563px) {
+   
+
+    .formContainer,
+    .info {
+        min-width: 100%;
+        padding: 5%;
+    }
+
+    input {
+        padding: 5px;
+        margin: 5px;
+        width: 50%;
+    }
+
+    nav {
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .set_height {
+        font-size: 18px;
+    }
+    .formContainer h1 {
+        margin: 15px;
+        font-size: 13px;
+    }
+}
+
+/* Your existing CSS code below this line */

@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 
 const app = express()
@@ -8,12 +9,19 @@ const router = require('./router/router')
 const path = require ('path')
 
 const hbs = require('hbs')
+const cookieParser= require('cookie-parser')
+
+
+// connecting to database 
+
+require('../src/db/conn')
 
 const pratialPath = path.join(__dirname,'../src/template/pratials')
 const staticPath = path.join(__dirname,'../public')
 const tempPath = path.join(__dirname,'../src/template/views')
 
 
+app.use(cookieParser())
 
 app.use(express.static(staticPath))
 
@@ -35,9 +43,7 @@ app.use(router)
 
 
 
-// connecting to database 
 
-require('../src/db/conn')
 
 
 
